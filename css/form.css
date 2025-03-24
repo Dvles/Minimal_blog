@@ -1,22 +1,35 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 100%;
+  min-width: 60%;
   margin: auto;
   background: transparent;
   padding: 20px;
   border-radius: 8px;
   box-shadow: none;
+  flex-grow: 1; /* Allow it to take remaining space */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
+
 .form-container {
   display: flex;
   gap: 50px;
+  border: 1px solid black;
+  padding: 50px;
+  justify-content: center; /* Center children inside */
+  align-items: center; /* Ensure alignment */
+  width: 100%;
+  max-width: 800px; /* Limit max width */
 }
+
 .left, .right {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -28,30 +41,34 @@ input, textarea {
 }
 
 textarea {
-  min-width:400px;
-  height: 150px; 
-
+  min-width: 100%;
+  height: 150px;
 }
+
 button {
+  margin-top: 50px;
   padding: 10px;
   background: var(--primary-color);
   color: white;
   border: none;
   cursor: pointer; 
   border-radius: var(--border-radius);
-  align-self: flex-start !important;
+  align-self: center; /* Center button */
 }
+
 button:hover {
   background: var(--secondary-color);
 }
 
-
-
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
   textarea {
-    max-width:350px;
-  
+    max-width: 100%;
   }
 }
