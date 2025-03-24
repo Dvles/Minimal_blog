@@ -1,12 +1,12 @@
 @import url('/css/header.css');
 @import url('/css/footer.css'); 
+@import url('/css/blog_grid.css'); 
 
 
-/* Define default theme colors */
 :root {
-  --primary-color: #000000;  /* Blue */
-  --secondary-color: #2ecc71; /* Green */
-  --active-color: #9effc6; /* Green */
+  --primary-color: #000000;  
+  --secondary-color: #2ecc71; 
+  --active-color: #9effc6; 
   --background-color: #ffffff;
   --text-color: #333;
   --border-thin: 1px solid black;
@@ -19,6 +19,9 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,22 +41,11 @@ a {
 
 
 
-
-
-
-
-@media (max-width: 480px) {
-  .article-title {
-    font-size: 2rem;
-  }
-  .article-subtitle {
-    font-size: 1.75rem;
-  }
-  .article-paragraph {
-    font-size: 1rem;
-  }
-  .nav-link {
-    font-size: 0.9rem;
-  }
+.main-content {
+  flex: 1; 
+  padding: 20px;
 }
+
+
+
 
