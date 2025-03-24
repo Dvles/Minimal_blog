@@ -1,6 +1,7 @@
 @import url('/css/header.css');
 @import url('/css/footer.css'); 
-@import url('/css/blog_grid.css'); 
+@import url('/css/portfolio_grid.css'); 
+@import url('/css/portfolio_article.css'); 
 
 
 :root {

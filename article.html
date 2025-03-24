@@ -3,76 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Article - Swiss Minimal Blog</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Minimal Portfolio Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-light-gray text-dark">
-
-    <!-- Header -->
-    <header>
-        <div class="logo">LOGO</div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+<body>
+    
+    <!-- Sticky Header -->
+    <header class="container">
+        <div class="navbar">
+            <h2><a href="#">Minimal Portfolio</a></h2>
+            <nav class="nav-flex">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Article Section -->
     <main class="main-content">
         <article class="article">
-            <header class="article-header">
-                <h1 class="article-title">The Art of Typography</h1>
-                <p class="article-meta">By John Doe | March 19, 2025</p>
-            </header>
-
-            <section class="article-body">
-                <img src="https://source.unsplash.com/random/800x400" alt="Blog Image" class="article-image">
-                <p class="article-paragraph">
-                    Typography is an art and a science. The way typefaces are arranged and used in design can dramatically influence a user's experience. Whether you’re creating a print advertisement or designing a website, typography plays a vital role in readability and brand perception.
-                </p>
-                <p class="article-paragraph">
-                    In this article, we will explore the principles of good typography, why it matters, and how to use it effectively in design. Let’s dive into the basics of typography and its impact on the user experience.
-                </p>
+            <section class="article-image">
+                <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
+                <section class="article-gallery">
+                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
+                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
+                </section>
             </section>
+            
+            <section class="article-content">
+                <h1>The Art of Typography</h1>
+                <p>By John Doe | March 19, 2025</p>
 
-            <section class="article-body">
-                <h2 class="article-subtitle">The Key Elements of Typography</h2>
-                <ul class="article-list">
-                    <li><strong>Font Choice:</strong> Choosing the right font for your project is crucial in setting the tone of the design.</li>
-                    <li><strong>Line Spacing:</strong> Proper line height improves the readability and flow of the text.</li>
-                    <li><strong>Contrast:</strong> Contrast between text and background color ensures legibility.</li>
-                    <li><strong>Hierarchy:</strong> Effective use of headers, subheaders, and paragraphs guides the reader’s attention.</li>
-                </ul>
+                <section class="article-body">
+                    <p class="article-paragraph">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <p class="article-paragraph">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.
+                    </p>
+                    <p class="article-paragraph">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    <h6 class="article-paragraph">
+                        <ul>
+                            <li><a href="">share</a></li>
+                            <li><a href="">bookmark</a></li>
+                            <li><a href="">download</a></li>
+                        </ul>
+
+                    </h6>
+                </section>
             </section>
-
-            <section class="article-body">
-                <h2 class="article-subtitle">Best Practices for Web Typography</h2>
-                <p class="article-paragraph">
-                    In web design, typography can make or break the user experience. It's essential to choose readable fonts, maintain proper line spacing, and ensure that your text is legible across all devices.
-                </p>
-            </section>
-
-            <footer class="article-footer">
-                <p class="article-footer-text">&copy; 2025 Swiss Minimal Blog | All rights reserved.</p>
-            </footer>
         </article>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">Facebook</a>
-            <a href="#" class="footer-link">Instagram</a>
-            <a href="#" class="footer-link">Twitter</a>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <p>Email: example@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Twitter</a>
+            </div>
         </div>
-        <form class="footer-form">
-            <input type="email" placeholder="Your email" class="footer-input">
-            <button class="footer-button">Subscribe</button>
-        </form>
     </footer>
 
 </body>

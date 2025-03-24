@@ -1,0 +1,84 @@
+.article {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between; 
+    align-items: flex-start;  
+    padding: 20px;
+}
+
+/* Image section */
+.article-image {
+    width: 50%; 
+    margin-left: 20% !important;
+}
+
+.article-image .article-galler img {
+    width: 30%;  
+    margin-left: 20% !important;
+}
+
+.article-image-img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 8px; 
+}
+
+/* Text content section */
+.article-content {
+    width: 50%;  
+    padding-left: 20px;  
+}
+
+.article-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Article body (list of typography principles) */
+.article-body {
+    margin-bottom: 20px;
+}
+
+.article-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.article-list li {
+    margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design: Stack image and text on smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;  
+        align-items: center; 
+    }
+
+    .article-image, .article-content {
+        width: 100%;  
+        padding-left: 0; 
+        margin-top: 20px; 
+    }
+
+    .article-content h1 {
+        font-size: 1.5rem; 
+    }
+
+    .article-content p {
+        font-size: 1rem; 
+    }
+}
