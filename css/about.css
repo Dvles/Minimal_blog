@@ -1,0 +1,65 @@
+.intro{
+    font-size: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.skills-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.skills-list li.active {
+    text-decoration: underline;
+    color: #2196f3;
+}
+
+
+p#skills-description  {
+    font-size: 30x;
+    color: #000000;
+}
+
+
+#skill-description {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    height: 150px; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+
+}
+
+.skill-description {
+
+    font-size: 40px !important;
+    color: #000000;
+}
+
+
+
+.skill-text.active {
+    text-decoration: underline;
+    font-weight: bold;
+}

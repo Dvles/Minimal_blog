@@ -35,8 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h6 {
+h6 a {
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
 ul {
@@ -50,7 +51,9 @@ a {
   color: inherit;
 }
 
-
+.hidden{
+  display: none;
+}
 
 .main-content {
   flex: 1; 
