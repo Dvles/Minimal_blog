@@ -1,3 +1,10 @@
+/**
+ * Minimal Blog Portfolio Template
+ * Designed & Developed by Leslie Devota Habimana
+ * Custom Cursor by Victor Hripko
+ * Free to use :)
+ */
+
 // Get all the skill elements and the skill description container
 const skills = document.querySelectorAll('.skill');
 const skillDescriptionContainer = document.getElementById('skill-description');

@@ -1,6 +1,3 @@
-.intro{
-    font-size: 40px;
-}
 
 .skills-container {
     display: flex;
@@ -48,14 +45,16 @@ p#skills-description  {
     padding: 20px;
     border-radius: 10px;
     transition: opacity 0.3s ease;
-
-}
-
-.skill-description {
-
-    font-size: 40px !important;
+    width: 60%;      /* Set a width so that it can be centered */
+    margin: 0 auto;  /* Auto margins will center the block horizontally */
+    font-size: 30px; /* Corrected unit from 30x to 30px */
     color: #000000;
+    padding-top: 10%;
+    
 }
+
+
+
 
 
 
@@ -63,3 +62,5 @@ p#skills-description  {
     text-decoration: underline;
     font-weight: bold;
 }
+
+

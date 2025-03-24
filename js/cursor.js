@@ -1,3 +1,8 @@
+/**
+ * Custom Cursor by Victor Hripko
+ */
+
+
 const cursor = document.querySelector(".custom-cursor");
 const links = document.querySelectorAll("a");
 let isCursorInited = false;

@@ -14,10 +14,7 @@
   --border-radius: 8px;
 }
 
-* {
 
-
-}
 
 
 body {
@@ -34,6 +31,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+.intro{
+  font-size: 40px;
+}
+
+.padding-20{
+  padding: 20px;
+}
+
 
 h6 a {
   font-size: 15px;
