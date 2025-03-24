@@ -1,0 +1,59 @@
+@import url('/css/header.css');
+@import url('/css/footer.css'); 
+
+
+/* Define default theme colors */
+:root {
+  --primary-color: #000000;  /* Blue */
+  --secondary-color: #2ecc71; /* Green */
+  --active-color: #9effc6; /* Green */
+  --background-color: #ffffff;
+  --text-color: #333;
+  --border-thin: 1px solid black;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 2rem;
+  }
+  .article-subtitle {
+    font-size: 1.75rem;
+  }
+  .article-paragraph {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
