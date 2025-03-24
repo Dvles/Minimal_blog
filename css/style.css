@@ -2,21 +2,22 @@
 @import url('/css/footer.css'); 
 @import url('/css/portfolio_grid.css'); 
 @import url('/css/portfolio_article.css'); 
-
+@import url('/css/form.css'); 
 
 :root {
   --primary-color: #000000;  
-  --secondary-color: #2ecc71; 
+  --secondary-color: #7da8ff; 
   --active-color: #9effc6; 
-  --background-color: #ffffff;
+  --background-color: #fffdef;
   --text-color: #333;
   --border-thin: 1px solid black;
+  --border-radius: 8px;
 }
 
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: #333;
   margin: 0;
   padding: 0;
