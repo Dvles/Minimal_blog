@@ -14,6 +14,11 @@
   --border-radius: 8px;
 }
 
+* {
+
+
+}
+
 
 body {
   font-family: "Inter", sans-serif;
@@ -28,6 +33,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+h6 {
+  font-size: 15px;
 }
 
 ul {
@@ -51,3 +60,47 @@ a {
 
 
 
+/* Custom cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.3);
+  transition: transform 0.15s ease-out, opacity 0.2s ease-out;
+  z-index: 9999;
+}
+
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-cursor--init {
+  opacity: 1;
+}
+
+.block {
+
+
+}
+
+.block__title {
+  margin-bottom: 1em;
+  font-size: 4rem;
+  font-weight: 300;
+
+}
+.block__link {
+  padding: 0.5em;
+  text-decoration: none;
+  transition: letter-spacing 200ms ease;
+}
+.block__link:hover {
+  letter-spacing: 0.2em;
+}

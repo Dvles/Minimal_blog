@@ -68,7 +68,7 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%); 
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.1s ease;
     object-fit: cover; 
     border-radius: var(--border-radius);
 }

@@ -6,11 +6,12 @@
     <title>Minimal Portfolio Blog</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="./js/lightbox.js" defer></script>
+    <script src="./js/cursor.js" defer></script>
 </head>
 <body>
     
     <!-- Sticky Header -->
-    <header class="container">
+    <header class="container block">
         <div class="navbar">
             <h2><a href="#">Minimal Portfolio</a></h2>
             <nav class="nav-flex">
@@ -24,7 +25,7 @@
     </header>
 
     <!-- Article Section -->
-    <main class="main-content">
+    <main class="main-content block">
         <article class="article">
             <section class="article-image">
                 <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img lightbox-trigger">
@@ -35,7 +36,7 @@
             </section>
             
             <section class="article-content">
-                <h1>The Art of Typography</h1>
+                <h1 class="block__title">The Art of Typography</h1>
                 <p>By John Doe | March 19, 2025</p>
 
                 <section class="article-body">
@@ -48,11 +49,11 @@
                     <p class="article-paragraph">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                     </p>
-                    <h6 class="article-paragraph">
+                    <h6 class="article-paragraph block">
                         <ul>
-                            <li><a href="">share</a></li>
-                            <li><a href="">bookmark</a></li>
-                            <li><a href="">download</a></li>
+                            <li><a href="" class="block__link">share</a></li>
+                            <li><a href="" class="block__link">bookmark</a></li>
+                            <li><a href="" class="block__link">download</a></li>
                         </ul>
 
                     </h6>
@@ -70,9 +71,9 @@
             </div>
     
             <div class="footer-links">
-                <a href="#" class="footer-link">Facebook</a>
-                <a href="#" class="footer-link">Instagram</a>
-                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link block__link">Facebook</a>
+                <a href="#" class="footer-link block__link">Instagram</a>
+                <a href="#" class="footer-link block__link">Twitter</a>
             </div>
         </div>
     </footer>
@@ -81,6 +82,6 @@
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
     </div>
-
+    <div class="custom-cursor"></div>
 </body>
 </html>
