@@ -107,8 +107,9 @@ a {
 .block__link {
   padding: 0.5em;
   text-decoration: none;
-  transition: letter-spacing 200ms ease;
+  /* transition: letter-spacing 200ms ease; */
 }
 .block__link:hover {
-  letter-spacing: 0.2em;
+  font-weight: bold;
+  /* letter-spacing: 0.2em; */
 }

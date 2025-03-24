@@ -72,11 +72,12 @@
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    align-items: center; /* This will center .footer-contact */
     text-align: center;
   }
 
-  .footer-form {
-    flex-direction: column;
+  .footer-contact {
+    text-align: center; /* Ensures text inside is centered */
   }
 
   .footer-links {
@@ -84,3 +85,4 @@
     gap: 10px;
   }
 }
+
