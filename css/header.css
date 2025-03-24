@@ -6,7 +6,7 @@ header {
   background-color: var(--background-color);
   padding: 10px 20px;
   z-index: 1000;
-  border: var(--border-thin);
+  border-bottom: var(--border-thin);
 }
 
 /* Navbar */
@@ -45,12 +45,12 @@ header {
   color: var(--text-color);
   font-size: 1rem;
   transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .nav-flex ul li a:hover {
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
-
 
 .logo {
   font-size: 2rem;

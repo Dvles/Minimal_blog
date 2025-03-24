@@ -4,28 +4,49 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+    margin-top: 20px;
 }
 
 /* Image section */
 .article-image {
-    width: 50%;
-    margin-left: 20% !important;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: flex-start; 
+}
+
+.article-image .article-gallery {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .article-image .article-gallery img {
-    width: 30%;
-    margin-left: 20% !important;
+    width: 100px; 
+    height: auto; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.article-image .article-gallery img:hover {
+    transform: scale(1.1);
 }
 
 .article-image-img {
-    width: 100%;
+    width: 100%; 
+    max-width: 600px; 
     height: auto;
     border-radius: 8px;
+    display: block;
+    margin: 0; 
 }
 
 /* Text content section */
 .article-content {
-    width: 50%;
+    width: 50%; 
     padding-left: 20px;
 }
 
@@ -40,7 +61,7 @@
     margin-bottom: 20px;
 }
 
-/* Article body (list of typography principles) */
+/* Article body */
 .article-body {
     margin-bottom: 20px;
 }
@@ -86,43 +107,36 @@
     font-weight: bold;
 }
 
-/* Responsive Design: Stack image and text on smaller screens */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* Responsive Design */
+@media (max-width: 1190px) {
     .article {
         flex-direction: column;
+        align-items: flex-start; 
         padding: 10px;
-    }
-
-    .article-image, .article-content {
         width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-        margin-top: 20px;
     }
 
-    .article-image-img {
-        width: 100%;
-        height: auto;
+    .article-image,
+    .article-content {
+        width: 90%; 
+        max-width: 600px; 
+        margin: 0 auto; 
+        padding: 0;
     }
 
-    .article-content h1 {
-        font-size: 1.5rem;
+    .article-content {
+        margin-top: 30px;
     }
 
-    .article-content p {
-        font-size: 1rem;
+    /* Align images to the left on mobile */
+    .article-image {
+        align-items: flex-start; 
     }
 
-    /* Gallery images in one row on smaller screens */
     .article-image .article-gallery {
         display: flex;
         gap: 10px;
-        justify-content: center;
+        justify-content: flex-start; 
     }
 
     .article-image .article-gallery img {

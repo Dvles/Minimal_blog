@@ -20,11 +20,19 @@
   gap: 15px; 
 }
 
+
 .footer-link {
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
 }
+
+a.footer-link:hover{
+
+  color: var(--hover-color);
+
+}
+
 
 /* Contact details section */
 .footer-contact {
