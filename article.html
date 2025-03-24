@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimal Portfolio Blog</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/lightbox.js" defer></script>
 </head>
 <body>
     
@@ -26,10 +27,10 @@
     <main class="main-content">
         <article class="article">
             <section class="article-image">
-                <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
+                <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img lightbox-trigger">
                 <section class="article-gallery">
-                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
-                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img">
+                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img lightbox-trigger">
+                    <img src="https://placehold.co/600x400" alt="Blog Image" class="article-image-img lightbox-trigger">
                 </section>
             </section>
             
@@ -75,6 +76,11 @@
             </div>
         </div>
     </footer>
+    <!-- lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
 
 </body>
 </html>

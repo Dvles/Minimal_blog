@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function() {
         btn.innerText = btn.getAttribute("data-default");
     });
 });
+
