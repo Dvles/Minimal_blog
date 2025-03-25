@@ -15,9 +15,6 @@
   --hover-color:  #00000082; 
 }
 
-
-
-
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--background-color);
@@ -67,8 +64,6 @@ a {
 }
 
 
-
-
 /* Custom cursor */
 .custom-cursor {
   position: fixed;
@@ -113,4 +108,35 @@ a {
 .block__link:hover {
   font-weight: bold;
   /* letter-spacing: 0.2em; */
+}
+
+/* Scrollbar */
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color); 
+  border-left: var(--border-thin);
+  padding: 5px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b4b3a9; 
+  border-radius: var(--border-radius);
+  width: 5px;  
+  background-clip: content-box; 
+  border: 3px solid transparent;  
+  opacity: 0.6; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8b8b83;  
+  border: 3px solid transparent !important; 
+
 }
