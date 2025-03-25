@@ -5,19 +5,18 @@ h2{
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid; 
-    grid-template-columns: repeat(3, minmax(400px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(250px, 1fr));  /* Allow items to shrink and grow within 250px minimum width */
     gap: 20px; 
     margin: 20px; 
 }
 
+/* Image container */
 .image-container {
     margin-bottom: 30px;
-
 }
 
 /* Each article within the grid */
 .portfolio-grid article {
-
     padding: 16px;
     border-radius: 8px; 
     overflow: hidden; 
@@ -28,7 +27,6 @@ h2{
     width: 100%; 
     height: auto; 
     border-radius: var(--border-radius);
-    
 }
 
 /* Hover effect */
@@ -83,20 +81,18 @@ h2{
     opacity: 1;
 }
 
-
-
-/* Responsive Design: Mobile */
+/* Responsive Design: Tablets and smaller screens (adjust to two columns) */
 @media (max-width: 1024px) {
     .portfolio-grid {
-        grid-template-columns: repeat(2, minmax(400px, 1fr)); 
+        grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Ensure two columns with at least 300px per item */
         gap: 16px;
     }
 }
 
-/* Smaller mobile screens */
+/* Smaller mobile screens (single column layout) */
 @media (max-width: 768px) {
     .portfolio-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Items should be smaller on mobile */
         gap: 16px; 
     }
 
