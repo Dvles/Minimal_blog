@@ -7,4 +7,5 @@ A free-to-use, minimal portfolio template for designers, designed to exercise bu
 - **Design & Development:** Leslie Devota Habimana 
 - **Custom Cursor:** Victor Hripko
 
-Enjoy and feel free to modify. Ideally, in a WP friendly way.
+Enjoy and feel free to modify, ideally, in a WP friendly way.
+Just beware responsive adjustements aren't implemented yet.
