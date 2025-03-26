@@ -13,3 +13,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   articles.forEach((article) => observer.observe(article));
 });
+
+document.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY;
+
+  document.querySelectorAll(".homepage-item").forEach((item) => {
+      let image = item.querySelector(".homepage-image-container img");
+      let title = item.querySelector(".hero-title");
+      let excerpt = item.querySelector(".hero-p");
+
+      if (image) {
+          image.style.transform = `translateY(${scrollTop * 0.2}px)`; 
+      }
+
+      if (title) {
+          title.style.transform = `translateY(${scrollTop * 0.4}px)`; 
+      }
+
+      if (excerpt) {
+          excerpt.style.transform = `translateY(${scrollTop * 0.6}px)`; 
+      }
+  });
+});
