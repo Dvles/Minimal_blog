@@ -23,6 +23,7 @@ header {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1.8rem;
+  
 }
 
 /* Navigation (ul) */
@@ -37,6 +38,7 @@ header {
 /* List items */
 .nav-flex ul li {
   display: inline-block;
+  text-transform: lowercase !important;
 }
 
 /* Links */
