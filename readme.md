@@ -1,7 +1,7 @@
 # Minimal Portfolio Template  
 (In development)
 
-A free-to-use, minimal portfolio template for designers, designed to exercise building a custom WordPress theme that users can easily customize. 
+A free-to-use, minimal portfolio template for designers, designed to exercise building a custom WordPress theme that users can easily customize. As well as test custom plugins in relation to a theme.
 
 ## Credits  
 - **Design & Development:** Leslie Devota Habimana 
