@@ -6,6 +6,7 @@
 .skill-list{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 140px;
 }
 
 .skills-list {
@@ -58,8 +59,11 @@
         flex-direction: column;
         gap: 10px; 
         flex: 0 0 45% !important;
+        margin-bottom: 0;
         
     }
+
+    
 
     .skill-description-div {
         flex: 0 0 60% !important; /* Takes 70% of width */
