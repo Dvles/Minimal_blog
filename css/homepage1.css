@@ -1,83 +1,90 @@
-/* Ensure the main content can scroll fully */
-.homepage1-main-content {
-    position: relative;
-    overflow: visible !important;
-    margin-top: 80px; 
-    min-height: 400vh; 
-}
-
-/* Article container */
-.homepage-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-/* Article section should grow based on content */
-.homepage-item {
+.splide {
     position: relative;
     width: 100%;
-    min-height: 120vh;
+    min-width: 100vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.splide__slide {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
-    text-align: left;
-    opacity: 0;
-    transform: scale(1.1);
-    transition: opacity 1s ease, transform 1s ease;
-    overflow: hidden;
-    padding-bottom: 50px; 
+    align-items: center;
+    min-height: 80vh;
+    overflow: hidden;  
 }
 
-/* Fade effect */
-.homepage-item.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Image container now adapts to content */
-.homepage-image-container {
+.carousel-title {
     position: absolute;
-    width: 75vw; 
-    height: auto; 
-    left: 0;
-    top: 0;
-    overflow: hidden;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    font-weight: 700;
+    z-index: -10;
+    text-transform: uppercase;
+}
+
+.splide__arrows.splide__arrows--ltr button.splide__arrow {
+   background-color: rgba(240, 248, 255, 0);
+}
+
+.homepage-image-container {
+    width: 75%; 
+    position: relative;
+    padding: 3%;
 }
 
 .homepage-image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
+    display: block;
+    min-height: 70vh;
 }
 
 h2.hero-title {
     position: absolute;
-    left: 50vw; 
-    top: 10%;
-    font-size: 80px;
-    font-weight: bold;
-    text-transform: uppercase;
-    mix-blend-mode: difference;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 60px !important;
+    z-index: 10;  
+    text-align: right !important;
+    padding: 0.5em 1em;
+    opacity: 0; 
+    transition: opacity 0.1s ease-in-out; 
+}
+
+.splide__slide.is-active h2.hero-title {
+    opacity: 1;  
+    z-index: 20; 
+}
+
+h2.hero-title:hover {
+    color: rgba(0, 0, 0, 0.539);
+    cursor: crosshair !important;  
+}
+
+.splide__arrow {
     z-index: 10;
 }
 
-
-article h2.hero-title {
-    font-size: 80px !important;
-    white-space: wrap;
+.splide__pagination, .splide__pagination--ltr {
+   display: none !important;
 }
 
+.splide__track {
+    cursor: grab;
+}
 
 p.hero-p {
     position: absolute;
     width: 25vw; 
     right: 0;
     top: 25%; 
-    font-size: 1.2rem;
+    font-size: 3.2rem;
     color: var(--primary-color);
     padding: 15px;
     z-index: 15;
@@ -101,14 +108,63 @@ header {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 856px) {
     h2.hero-title {
-        font-size: 60px; /* Adjust for mobile */
+        font-size: 30px !important; 
+        left: auto; 
+        right: 0; 
+        transform: none; 
+        top: 85%; 
+        text-align: right; 
     }
 
-    p.hero-p {
-        width: 50vw; /* Make text wider for smaller screens */
-        font-size: 1rem;
-        top: 30%;
+    .homepage-image-container {
+        width: 90%; 
+        padding-top: 2%;  
+    }
+
+    .homepage-image-container img {
+        display: block;
+        height: auto;  
+        max-width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    h2.hero-title {
+        font-size: 32px; 
+        padding: 0.3em;
+        top: 75%; 
+        right: 0; 
+        transform: none; 
+        text-align: right; 
+    }
+
+    .homepage-image-container {
+        padding: 2%;
+        padding-top: 5%;  
+    }
+}
+
+@media (max-width: 729px) {
+    h2.hero-title {
+        font-size: 32px; 
+        padding: 8% 5%;  
+        top: 78%; 
+        right: 0; 
+        transform: none; 
+        text-align: right; 
+    }
+}
+
+@media (max-width: 450px) {
+    h2.hero-title {
+        font-size: 32px; 
+        padding: 8% 5%;  
+        top: 70%; 
+        right: 0; 
+        transform: none; 
+        text-align: right; 
+    }
+}
+
